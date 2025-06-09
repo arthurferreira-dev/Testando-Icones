@@ -1,0 +1,16 @@
+@charset "UTF-8";
+
+/*Roboto Google Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/*Em caso de error do sistema do Google Fonts*/
+@font-face {
+    font-family: 'Roboto v2';
+    src: url('../fonts/roboto/Roboto-Regular.ttf') format(truetype);
+    font-style: normal;
+    font-weight: normal;
+}
+
+:root {
+    --roboto: 'Roboto', 'Roboto v2', Arial, Helvetica, sans-serif;
+}
