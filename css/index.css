@@ -49,6 +49,11 @@ img#folder {
     height: 45px;
 }
 
+img#icon-desc {
+    margin-bottom: -5px;
+    height: 33.5px;
+}
+
 img#folder:hover {
     cursor: pointer;
 }
@@ -57,7 +62,7 @@ main {
     margin: 7px;
 }
 
-nav.navbar > * {
+nav#itens > * {
     display: inline;
     margin-left: 35px;
 }
@@ -69,5 +74,61 @@ a {
 }
 
 a:hover {
+    color: #fff;
+}
+
+i#menu-icon {
+    display: none;
+}
+
+h1#semi-title {
+    font-size: 1.35em;
+    text-align: center;
+    padding: 3px;
+}
+
+p#semi-p {
+    font-size: 1em;
+    text-align: center;
+    margin-top: 5px;
+    color: #515151;
+}
+
+div#comment {
+    display: block;
+    margin-top: 10px;
+    margin: auto;
+    text-align: center;
+    border: 1.2px solid orangered;
+    border-radius: 18px;
+    padding: 4.5px;
+    width: 380px;
+    height: 50px;
+}
+
+div#comment > p > img#medal-star {
+    height: 34px;
+    margin-bottom: -3px;
+}
+
+img.icons {
+    height: 100px;
+}
+
+.card-icon {
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    text-align: center;
+}
+
+button.btn-dowloand {
+    padding: 8px;
+    background-color: #e6500b;
+    border: none;
+    border-radius: 5.6px;
+}
+
+button.btn-dowloand > a {
     color: #fff;
 }

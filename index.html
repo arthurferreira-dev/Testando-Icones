@@ -3,27 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <title>Testando Icones</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/media-query/index.css">
 </head>
-<body>
+<body onresize="High()">
     <header>
         <img src="icons/logos/website.svg" alt="Icon - Icones Web" id="icon-icweb"> 
         <h1 id="title-header">Icones Web</h1>
-        <nav class="navbar">
+        <i class="fa-solid fa-angle-down" id="menu-icon" onclick="menuOpen()"></i>
+        <nav id="itens">
             <li>
-                <a href="index.html">Pacotes</a> 
+                <a href="#">Pacotes</a> 
                 <img src="icons/folder.svg" alt="Folder Icon" id="folder" ondblclick="Folder()" onclick="UnFolder()">
+            </li>
+            <li>
+                <a href="#">Sobre</a>
+                <img src="icons/text-description.svg" alt="Text-Description" id="icon-desc">
             </li>
         </nav>
     </header>
     <main>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Beatae autem magnam a nostrum distinctio, ab dolor itaque accusamus cum rem similique qui officiis ea incidunt! Cum, ea nemo! Ab, doloribus!
-        Placeat veniam cum quam expedita laudantium sapiente, quisquam reiciendis voluptatibus dicta quaerat perspiciatis, commodi nesciunt rem, enim voluptatem doloremque! Recusandae facere reiciendis beatae libero eligendi similique minus, repellat ratione cumque!
-        Velit impedit voluptate quisquam dolorem voluptatum, laboriosam ducimus magnam tempore aperiam, nam iusto ea doloremque, explicabo hic odio libero ut neque ex? Non natus facere maxime corrupti quas quidem porro!
-        Quia aperiam quaerat architecto consequatur aliquid illo sed nam sit similique quis iure velit eaque, aspernatur explicabo quasi iusto ad earum laboriosam provident minus? Nostrum distinctio impedit voluptas sed ut!</p>
+        <h1 id="semi-title">Ícones grátis e de código aberto!</h1>
+        <p id="semi-p">(<strong>sem login obrigatório!</strong>)</p>
+        <br>
+        <div id="comment">
+            <p>
+                <img src="icons/medal-star.svg" alt="Medália de verificação" id="medal-star">
+                <strong>
+                    Criado por uma ÚNICA pessoa
+                </strong>
+            </p>
+        </div>
+
+        <br>
+
+        <article>
+            <div class="card-icon">
+                <h1>Linux</h1>
+                <img src="icons/linux.svg" alt="Linux Logo" class="icons">
+                <br>
+                <button class="btn-dowloand">
+                    <a href="icons/linux.svg" download="linux.svg">
+                        Downloand <span style="color: #000;"><i class="fa-brands fa-linux"></i></span>
+                    </a>
+                </button>
+            </div>
+                <br>
+            <div class="card-icon">
+                <h1>Chrome</h1>
+                <img src="icons/chrome.svg" alt="Chrome Logo" class="icons">
+                <br>
+                <button class="btn-dowloand">
+                    <a href="icons/chrome.svg" download="chrome.svg">
+                        Downloand <span style="color: #000;"><i class="fa-brands fa-chrome"></i></span>
+                    </a>
+                </button>
+            </div>
+                <br>
+            <div class="card-icon">
+                <h1>WhatsApp</h1>
+                <img src="icons/whatsapp.svg" alt="WhatsApp Logo" class="icons">
+                <br>
+                <button class="btn-dowloand">
+                    <a href="icons/whatsapp.svg" download="whatsapp.svg">
+                        Download <span style="color: green;"><i class="fa-brands fa-whatsapp"></i></span>
+                    </a>
+                </button>
+            </div>
+                <br>
+            <div class="card-icon">
+                <h1>Firefox</h1>
+                <img src="icons/firefox.svg" alt="Firefox Logo" class="icons">
+                <br>
+                <button class="btn-dowloand">
+                    <a href="icons/firefox.svg" download="firefox.svg">
+                        Download <span style="color: #357fff;"><i class="fa-brands fa-firefox-browser"></i></span>
+                    </a>
+                </button>
+            </div>        
+        </article>
     </main>
 </body>
 <script src="js/icons.js"></script>
+<script src="js/menu.js"></script>
 </html>

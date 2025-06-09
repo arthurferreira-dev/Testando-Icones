@@ -24,10 +24,23 @@
         height: 28px;
     }
 
-    nav.navbar > * {
+    nav#itens > * {
         display: block;
         margin-left: 20px;
         margin-top: 12px;
+        text-align: center;
+    }
+
+    i#menu-icon {
+        display: block;
+        margin-top: 12px;
+        text-align: center;
+        background-color: #056d9a;
+        padding: 5.6px;
+    }
+
+    div#comment {
+        width: 356px;
     }
 }
 /*768px e 1023px*/
@@ -45,7 +58,7 @@
         height: 30px;
     }
 
-    nav.navbar > * {
+    nav#itens > * {
         display: inline;
         margin-left: 14px;
     }
