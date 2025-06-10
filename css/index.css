@@ -1,5 +1,6 @@
 @charset "UTF-8";
 @import url('fontes-css/roboto.css');
+@import url('fontes-css/mont.css');
 
 * {
     margin: 0px;
@@ -113,6 +114,11 @@ div#comment > p > img#medal-star {
 
 img.icons {
     height: 100px;
+    margin: 12px 0px;
+}
+
+img.icons:hover {
+    cursor: pointer;
 }
 
 .card-icon {
@@ -124,11 +130,41 @@ img.icons {
 
 button.btn-dowloand {
     padding: 8px;
-    background-color: #e6500b;
+    background-color: #1387f5;
     border: none;
     border-radius: 5.6px;
 }
 
 button.btn-dowloand > a {
     color: #fff;
+}
+
+span#icon-zap {
+    color: green;
+}
+
+span#firefox {
+    color: #f88b3d;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #228ff5;
+    color: #fff;
+    font-family: var(--mont-heavy);
+}
+
+footer > p {
+    margin: 2px;
+    line-height: 1.5em;
+}
+
+span#duck {
+    color: #f88b3d;
+}
+
+a.link-footer:hover {
+    color: #000;
+    text-decoration: underline;
 }

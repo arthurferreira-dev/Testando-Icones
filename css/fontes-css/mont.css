@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: 'Mont Heavy';
+    src: url('/fonts/mont/Mont-HeavyDEMO.otf') format(opentype);
+}
+
+:root {
+    --mont-heavy: 'Mont Heavy', Helvetica, Verdana, sans-serif;
+}
