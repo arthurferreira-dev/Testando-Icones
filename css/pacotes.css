@@ -1,0 +1,156 @@
+@charset "UTF-8";
+@import url('fontes-css/roboto.css');
+@import url('fontes-css/mont.css');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--roboto);
+    font-size: 1.4em;
+}
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 12px;
+    background-color: #0678a9;
+    margin-bottom: 20px;
+    border: none;
+}
+
+header > * { /* Tudo que estiver dentro do 'header' */
+    display: inline;
+}
+
+header > h1#title-header {
+    text-align: left;
+    font-size: 1.35em;
+}
+
+header > img#icon-icweb {
+    height: 35px;
+    background-color: #f0f8ff;
+    border-radius: 50%; /* Arredondamento PERFEITO! */
+    margin-right: 5px;
+    margin-top: -2px;
+    margin-bottom: -4px;
+}
+
+header > img#icon-icweb:hover {
+    cursor: pointer;
+}
+
+nav#itens > * {
+    display: inline;
+    margin-left: 35px;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+    transition-duration: .36s;
+}
+
+a:hover {
+    color: #fff;
+}
+
+a.view-more {
+    font-size: 0.8em;
+}
+
+a.title-view {
+    margin-left: 6.34px;
+}
+
+div.icons-web > img.icons8 {
+    display: inline;
+    margin-left: 12px;
+}
+
+a.title-view:hover {
+    color: #001;
+    cursor: pointer;
+}
+
+a.view-more:hover {
+    color: #39c160;
+}
+
+div.view {
+    margin-left: 222px;
+    margin-top: -12px;
+}
+
+i#menu-icon {
+    display: none;
+}
+
+img#icon-desc {
+    margin-bottom: -5px;
+    height: 33.5px;
+}
+
+footer {
+    margin-top: 20px;
+    padding: 12px;
+    background-color: #228ff5;
+    color: #fff;
+    font-family: var(--mont-heavy);
+}
+
+footer > p {
+    margin: 2px;
+    line-height: 1.5em;
+}
+
+span#duck {
+    color: #f88b3d;
+}
+
+a.link-footer:hover {
+    color: #000;
+    text-decoration: underline;
+}
+
+main {
+    margin: 7px;
+}
+
+img.icons8, img.icons8b {
+    height: 42px;
+    width: 42px;
+}
+
+img.icons8b {
+    margin-top: 8px;
+    margin-left: 8px;
+    margin-right: 8px;
+    margin-bottom: 8px;
+}
+
+img#folder {
+    margin-bottom: -10px;
+    height: 45px;
+}
+
+img#folder:hover {
+    cursor: pointer;
+}
+
+a.link-github:hover, a.link-website:hover {
+    color: #696969;
+}
+
+a#icons8-link {
+    color: #39c160;
+}
+
+a#icons8-link:hover {
+    color: #2fa350;
+}
