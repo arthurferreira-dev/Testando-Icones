@@ -12,6 +12,7 @@
     <link rel="shortcut icon" href="/favicon/favicon.ico" type="image/x-icon">
     <title>Icones Web - Pacote Flat Color Icons</title>
     <link rel="stylesheet" href="/css/pacotes.css">
+    <link rel="stylesheet" href="/css/media-query/pacotes.css">
 </head>
 <body onresize="High()">
     <header>
@@ -39,17 +40,17 @@
     </header>
     
     <main>
-        <h2>Flat Color Icons</h2>
-        <p><strong>33</strong> icones disponíveis e gratuitos!</p>
-        <p>
+        <h2 id="flat-title">Flat Color Icons</h2>
+        <p id="cmnt-p"><strong>33</strong> icones disponíveis e gratuitos!</p>
+        <p id="icons-flat">
             <a href="https://github.com/icons8/flat-color-icons" class="link-github" target="_blank">
                 <i class="fa-brands fa-github"></i>
             </a>
-            <a href="https://icons8.com/icons/color?ref=wwwiconduckcom" class="link-website" target="_blank">
+            <a href="https://icons8.com/icons/color" class="link-website" target="_blank">
                 <i class="fa-solid fa-link"></i>
             </a>
         </p>
-        <section>
+        <section id="sec-desc">
             <h3>Flat Color Icons</h3>
             <p>
                 Os icones Flat Color são modernos e bem bonitos, eles tem para redes socias, uso pessoal, uso comercial e etc.
@@ -59,16 +60,24 @@
             </p>
         </section>
         <br>
-            <h3>Icones:</h3>
-            <section>
+            <h3 id="icons-title">Icones:</h3>
+            <section id="flat-icons">
                 <div class="icons-web">
-                    <a href="/icons/packs/FlatColorIcons/about.svg" downloand="about.svg">
-                        <img src="/icons/packs/FlatColorIcons/about.svg" alt="About" class="icons8b">
-                    </a>
-
-                    <a href="/icons/packs/FlatColorIcons/alarm-clock.svg" downloand="alarm-clock.svg">
-                        <img src="/icons/packs/FlatColorIcons/alarm-clock.svg" alt="Alarm Clock" class="icons8b">
-                    </a>
+                    <i class="fa-solid fa-xmark" id="x-mark" onclick="Return()"></i>
+                        <img src="/icons/packs/FlatColorIcons/about.svg" alt="About" class="icons8b" onclick="About()" id="about">
+                        <button id="btn-dowloand">
+                            <a href="/icons/packs/FlatColorIcons/about.svg" download="about.svg" class="link-dowmload">
+                                Download <i class="fa-solid fa-download"></i>
+                            </a>
+                        </button>
+                    
+                    <i class="fa-solid fa-xmark" id="x-mark" onclick="Return2()"></i>
+                        <img src="/icons/packs/FlatColorIcons/alarm-clock.svg" alt="Alarm Clock" class="icons8b" onclick="Alarm()" id="alarm-clock">
+                        <button id="btn-dowloand">
+                            <a href="/icons/packs/FlatColorIcons/alarm-clock.svg" download="alarm-clock.svg">
+                                Download <i class="fa-solid fa-download"></i>
+                            </a>
+                        </button>
 
                     <a href="/icons/packs/FlatColorIcons/android-os.svg" downloand="android-os.svg">
                         <img src="/icons/packs/FlatColorIcons/android-os.svg" alt="Android Os" class="icons8b">
@@ -218,4 +227,5 @@
 </body>
 <script src="/js/icons2.js"></script>
 <script src="/js/menu.js"></script>
+<script src="/js/zoom-icons.js"></script>
 </html>
